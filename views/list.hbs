@@ -1,0 +1,19 @@
+<h1>
+    Courses
+</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    {{#each data}} 
+    <tr>
+        {{#if this}}
+        <th bgcolor="red">{{this.courseId}}</th>
+        <th bgcolor="red">{{this.courseName}}</th>
+        {{/if}}
+    </tr>
+    {{/each}}
+
+</table>
